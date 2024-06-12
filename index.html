@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card Project</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            width: 300px;
+        }
+    </style>
+    s=<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Information</h1>
+    <form id="userForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="village">Village:</label><br>
+        <input type="text" id="village" name="village" required><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+        <button type="button" onclick="saveUserInfo()">Save</button>
+    </form>
+
+    <h2>User Card</h2>
+    <div id="userCard" class="card"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
